@@ -1,7 +1,7 @@
 {
   "name": "react-js-blog",
   "version": "0.1.0",
-  "homepage": "https://Albert0i.github.io/react_js_blog", 
+  "homepage": "https://Albert0i.github.io/react_js_blog_gh", 
   "private": true,
   "dependencies": {
     "axios": "^1.1.2",
