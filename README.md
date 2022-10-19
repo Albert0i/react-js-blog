@@ -191,6 +191,7 @@ import api from './api/posts'
   }
 ```
 
+
 ## V. Upgrade to React 18
 ![alt How to Upgrade to React 18](img/React18.JPG)
 
@@ -226,6 +227,7 @@ root.render(
     </React.StrictMode>
    );
 ```
+
 
 ## VI. Custom react hook as a kind of utility function 
 
@@ -321,6 +323,8 @@ export default useAxiosFetch;
 
 
 ## VII. Properties vs [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
+> The React context provides data to components no matter how deep they are in the components tree. The context is used to manage global data, e.g. global state, theme, services, user settings, and more.
+
 Using properties to pass parameters: 
 ```javascript
    return (
@@ -524,6 +528,8 @@ export default Header;
 
 
 ## VIII. State management via [Easy Peasy](https://easy-peasy.vercel.app/)
+> Easy Peasy is an abstraction of Redux, providing a reimagined API that focuses on developer experience. It allows you to quickly and easily manage your state, whilst leveraging the strong architectural guarantees and extensive eco-system that Redux has to offer.
+
 store.js
 ```javascript
 import { createStore, action, thunk, computed } from "easy-peasy";
@@ -634,69 +640,13 @@ const Footer = () => {
 export default Footer
 ```
 
-## IX. Deployment
 
-- [Netlify](https://app.netlify.com/) [link](https://rainbow-kringle-7cfda1.netlify.app/)
+## IX. Deploy to [Netlify](https://app.netlify.com/)
+> Netlify is an all-in-one platform for automating modern web projects. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow. Integrate dynamic functionality like serverless functions, user authentication, and form handling as your projects grow.
 
-- [GitHub](https://github.com/) [link](https://albert0i.github.io/react_js_blog)
-                                       
-```bash
-npm install gh-pages --save-dev
-```
+-  [online link](https://legendary-tarsier-19df09.netlify.app/)
 
-package.json
-```json
-{
-  "name": "react-js-blog",
-  "version": "0.1.0",
-  "homepage": "https://albert0i.github.io/react_js_blog_gh", 
-  "private": true,
-  "dependencies": {
-    "axios": "^1.1.2",
-    "date-fns": "^2.29.3",
-    "easy-peasy": "^5.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "react-router-dom": "^6.4.2",
-    "react-scripts": "5.0.1"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "json-server": "npx json-server -p 3500 -w data/db.json"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
-}
-```
-
-```bash
-npm run deploy
-```
+![alt react_js_blog_netlify_localhost](img/react_js_blog_netlify_localhost.JPG)
 
 
 ## X. Summary 
@@ -718,4 +668,4 @@ A more practical and feasible way to go the past is to stare at a mirror, the im
 8. [The Narrative of Arthur Gordon Pym of Nantucket](https://www.eapoe.org/works/editions/pymbc.htm)
 
 
-## EOF (2022/10/18)
+## EOF (2022/10/19)
