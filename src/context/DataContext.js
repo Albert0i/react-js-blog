@@ -17,7 +17,10 @@ export const DataProvider = ({ children }) => {
     // const [editBody, setEditBody] = useState('');
     // const navigate = useNavigate();
     const { width } = useWindowSize()
-    const { data, fetchError, isLoading } = useAxiosFetch('http://localhost:3500/posts')
+    // For development environment
+    //const { data, fetchError, isLoading } = useAxiosFetch('http://localhost:3500/posts')
+    // For production environment 
+    const { data, fetchError, isLoading } = useAxiosFetch('https://my-json-server.onrender.com/posts')
   
     // Initial load using custom hook 
     useEffect( () => {

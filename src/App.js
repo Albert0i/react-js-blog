@@ -27,7 +27,11 @@ function App() {
   // const navigate = useNavigate();
   // const { width } = useWindowSize()
   const setPosts = useStoreActions((actions) => actions.setPosts)
-  const { data, fetchError, isLoading } = useAxiosFetch('http://localhost:3500/posts')
+  
+  // For development environment
+  //const { data, fetchError, isLoading } = useAxiosFetch('http://localhost:3500/posts')
+  // For production environment 
+  const { data, fetchError, isLoading } = useAxiosFetch('https://my-json-server.onrender.com/posts')
 
   // Initial load
   // useEffect(() => {
